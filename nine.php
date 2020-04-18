@@ -1,12 +1,12 @@
  <?php
 $cookie_name = "Item9";
-setcookie($cookie_name, time(), time() + (86400 * 30),"/");
+setcookie($cookie_name, time(), time() + (7200),"/");
 $cookie_item9 = "Item9count";
 if (!isset($_COOKIE['Item9count'])) {
-setcookie($cookie_item9,0, time() + (86400 * 30),"/");
+setcookie($cookie_item9,0, time() + (7200),"/");
 }
 else{
-setcookie($cookie_item9,$_COOKIE["Item9count"]+1, time() + (86400 * 30),"/");
+setcookie($cookie_item9,$_COOKIE["Item9count"]+1, time() + (7200),"/");
 }
  ?>
 <!DOCTYPE html>
